@@ -1,0 +1,224 @@
+*{
+   font-family: 'Times New Roman', Times, serif; 
+   padding: 0;
+   margin: 0;
+}
+i{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+
+
+.section_header{
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    /* background-color: rebeccapurple; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px;
+    margin: auto;
+    position: fixed;
+    z-index: 10;
+
+
+}
+.ham_logo{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    /* border: 2px solid red; */
+    justify-content: space-around;
+}
+.ham_logo .humbgar{
+    cursor: pointer;
+}
+.ham_logo .logo img{
+    width: 100px;
+    height: 80px;
+    cursor: pointer;
+}
+.search_mic{
+    display: flex;
+    align-items: center;
+}
+.search_mic .search_button{
+    width: 530px;
+    display: flex;
+    align-items: center;
+}
+.search_mic .search_button div{
+    margin-left: 15px;
+}
+.fa-microphone,.fa-video,.fa-bars,.fa-bell{
+    margin: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50px;
+    background-color: rgb(248, 244, 244);
+    padding: 8px;
+    text-align: center;
+
+}
+.fa-microphone:hover{
+    background-color: rgb(223, 217, 217);
+}
+.fa-video:hover{
+    background-color: rgb(223, 217, 217);
+}
+.fa-bars:hover{
+    background-color: rgb(223, 217, 217);
+}
+.fa-bell:hover{
+    background-color: rgb(223, 217, 217);
+}
+.search_mic .search_button{
+    /* border: 2px solid green; */
+    background-color: rgb(197, 189, 189);
+    border-radius: 50px;
+    /* padding: 5px; */
+    /* border: 1px solid;   */
+
+}
+.search_mic .search_button input{
+    width: 450px;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 50px 0 0 50px;
+    border: 1px solid grey;
+}
+.search_mic .search_button input{
+    /* border: 1px solid rgb(6, 212, 6); */
+}
+.search_mic .search_button span{
+    width: 60px;    
+    /* background-color: aliceblue; */
+    padding: 5px;
+    border: none;
+    /* border-radius: 0px 50px 50px 0; */
+    cursor: pointer;
+}
+.profile_notifiction {
+    display: flex;
+    width: 250px;
+    /* border: 2px solid yellow; */
+    justify-content: center;
+    align-items: center;
+}
+.profile_notifiction .profile img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+/* ----------------------Icon Hover tooltip--Style---------------------------- */
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  /* width: 160px; */
+  background-color: rgb(129, 127, 127);
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 10px;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 55px;
+  /* left: 0%; */
+}
+.search_voice{
+    width: 160px;
+}
+
+
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+/* ----------section_container_Style------------------------------- */
+.section_container{
+    width: 100%;
+    /* background-color: aquamarine; */
+    height: 100vh;
+    display: flex;
+    position: relative;
+    top: 90px;
+}
+.section_container .sidebar{
+    width: 200px;
+    /* position: fixed; */
+    /* top: 100px; */
+    /* background-color: blueviolet; */
+}
+.section_container .btn_link{
+    padding: 5px;
+    /* position: fixed; */
+    top: 80px;
+}
+.section_container .btn_link button{
+    border: none;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 0 0 0 10px;
+} 
+.section_container .btn_link button:hover{
+    background-color: rgb(214, 213, 213);
+}
+.section_container .btn_link a{
+  text-decoration: none;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: 400;
+  color: rgb(78, 78, 78);
+  
+}
+/* ----------content content_cards--------------- */
+.content{
+    width: 1100px;
+}
+.content .content_cards{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.content .content_cards .card{
+    /* border: 1px solid grey; */
+    width: 220px;
+    text-align: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.content .content_cards .card img{
+    height: 200px;
+    border-radius: 10px;
+    
+}
+/* -------sidebar-Style--------------------------------- */
+
+.sidebar .menubars{
+    display: flex;
+    padding: 8px; 
+    align-items: center;
+    cursor: pointer;  
+    border: 1px solid rgb(253, 252, 252);
+    border-radius: 12px;  
+}
+.sidebar .menubars:hover{
+    background-color: rgb(231, 227, 227);
+    border: 1px solid rgb(235, 233, 233);
+    border-radius: 12px;
+}
+.sidebar .menubars .home{
+    margin-left: 30px;
+}

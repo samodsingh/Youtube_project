@@ -8,7 +8,10 @@ i{
     cursor: pointer;
 }
 
-
+hr{
+    opacity: 0.5;
+    margin: 10px 0 10px 0;
+}
 
 .section_header{
     width: 100%;
@@ -155,15 +158,18 @@ i{
     top: 90px;
 }
 .section_container .sidebar{
-    width: 200px;
-    /* position: fixed; */
-    /* top: 100px; */
-    /* background-color: blueviolet; */
+    width: 250px;
+    position: fixed;
+    overflow-y: scroll;
+    top: 90px;
+    bottom: 0;
+  
 }
 .section_container .btn_link{
     padding: 5px;
-    /* position: fixed; */
-    top: 80px;
+    background-color: white;
+    height: 40px;
+    z-index: 12;
 }
 .section_container .btn_link button{
     border: none;
@@ -184,25 +190,41 @@ i{
 }
 /* ----------content content_cards--------------- */
 .content{
-    width: 1100px;
+    position: fixed;    
+    left: 250px;
+   
 }
 .content .content_cards{
+    position: fixed;
+    overflow-y: scroll;
+    top: 140px;
+    bottom: 0;
+    left: 250px;
     padding: 20px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
 }
 .content .content_cards .card{
-    /* border: 1px solid grey; */
-    width: 220px;
-    text-align: center;
-    margin-bottom: 10px;
+    width: 250px;
+    text-align: left;
+    margin-bottom: 30px;
     cursor: pointer;
 }
 .content .content_cards .card img{
     height: 200px;
     border-radius: 10px;
     
+}
+.content .content_cards .card .card_title{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 6px;
+}
+.content .content_cards .card .card_title .channel_profile{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
 }
 /* -------sidebar-Style--------------------------------- */
 
